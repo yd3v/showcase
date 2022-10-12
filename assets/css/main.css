@@ -7,6 +7,7 @@
     --jazzberry-jam: #961d4eff;
     --dark-sienna: #360a14ff;
     --light-alpha: rgba(255, 255, 255, .03);
+    --dark-alpha: rgba(0, 0, 0, .4);
 }
 
 * {
@@ -19,15 +20,15 @@
 }
 
 body {
-    background-image: url(../img/bg.webp);
+    background-image: url(https://w.wallhaven.cc/full/mp/wallhaven-mpyggm.png);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    color: var(--iris);
+    color: white;
 }
 
 header {
-    background-color: var(--light-alpha);
+    background-color: var(--dark-alpha);
     display: flex;
     width: 100%;
     justify-content: center;
@@ -35,6 +36,8 @@ header {
     align-items: center;
     padding: 3em;
 }
+
+
 
 .menu {
     background-color: var(--light-alpha);
@@ -56,4 +59,15 @@ header {
 .menu li a:hover {
     transition: background-color .1s;
     background-color: var(--light-alpha);
+}
+
+
+.container {
+    background-color: var(--dark-alpha);
+    width: 80%;
+    padding: 1em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1em;
+    margin-top: 1em;
 }
