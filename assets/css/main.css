@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap');
 
 :root {
     --sea-green-crayola: #44ffd1ff;
@@ -6,6 +6,7 @@
     --flirt: #a60067ff;
     --jazzberry-jam: #961d4eff;
     --dark-sienna: #360a14ff;
+    --light-alpha: rgba(255, 255, 255, .03);
 }
 
 * {
@@ -13,12 +14,46 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'JetBrains Mono', monospace;
+    text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 body {
-    background-image: url(/assets/img/bg.webp);
+    background-image: url(../img/bg.webp);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    color: var(--iris);
+}
+
+header {
+    background-color: var(--light-alpha);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+}
+
+.menu {
+    background-color: var(--light-alpha);
+    margin-top: 1em;
+    list-style-type: none;
+}
+
+.menu li {
+    padding: 1em;
+    display: inline-block;
+}
+
+.menu li a {
     color: var(--sea-green-crayola);
+    transition: background-color .1s;
+    padding: 1em;
+}
+
+.menu li a:hover {
+    transition: background-color .1s;
+    background-color: var(--light-alpha);
 }
