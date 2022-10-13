@@ -68,7 +68,6 @@ ul li {
 }
 
 .menu li a:hover {
-    transition: background-color .1s;
     background-color: var(--light-alpha);
 }
 
@@ -94,12 +93,35 @@ ul li {
 
 .container p {
     font-size: larger;
+    background-color: black;
 }
 
 .icon {
     vertical-align: middle;
     margin: 3px;
     width: 20px;
+}
+
+.btn-float {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    background-color: white;
+    padding: 1em;
+    border-radius: 100%;
+}
+
+.hoverable {
+    transition: opacity .2s;
+}
+
+.hoverable:hover {
+    opacity: .5;
+
+}
+
+.black-bg {
+    background-color: black;
 }
 
 @media only screen and (max-width:768px) {}
