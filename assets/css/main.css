@@ -78,6 +78,7 @@ ul li {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 1em;
+    background-color: var(--dark-alpha);
     margin-top: 1em;
     min-height: 100vh;
 }
@@ -93,7 +94,7 @@ ul li {
 
 .container p {
     font-size: larger;
-    background-color: var(--dark-alpha);
+
     padding: 1em;
 }
 
@@ -124,6 +125,18 @@ ul li {
 .black-bg {
     background-color: black;
 }
+
+ul.styled-list li::before {
+    content: "- ";
+    color: var(--flirt);
+}
+
+img.tool-logo {
+    width: 300px;
+    vertical-align: middle;
+    max-width: 90%;
+}
+
 
 @media only screen and (max-width:768px) {
 
