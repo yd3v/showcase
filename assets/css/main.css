@@ -29,7 +29,7 @@ body {
 }
 
 header {
-    background-color: var(--light-alpha);
+    background-color: var(--dark-alpha);
     display: flex;
     width: 100%;
     min-height: 100vh;
@@ -64,6 +64,7 @@ ul li {
     color: var(--sea-green-crayola);
     font-weight: bolder;
     transition: background-color .1s;
+    text-decoration: none;
     padding: 1em;
 }
 
@@ -137,6 +138,9 @@ img.tool-logo {
     max-width: 90%;
 }
 
+a {
+    text-decoration: underline;
+}
 
 @media only screen and (max-width:768px) {
 
